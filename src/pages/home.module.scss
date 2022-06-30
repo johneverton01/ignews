@@ -1,5 +1,8 @@
+$medium: 630px;
+
 .contentContainer {
   max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   height: calc(100vh - 5rem);
@@ -7,6 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
 }
 
 .hero {
